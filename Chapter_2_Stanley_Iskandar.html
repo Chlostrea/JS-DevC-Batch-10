@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+
+    <style>
+        body{
+            background-image: url("https://st2.depositphotos.com/2082539/9335/i/950/depositphotos_93357212-stock-photo-gray-brick-wall-seamless-illustration.jpg")
+        }
+    </style>
+</head>
+
+<body>
+    
+
+    <script>
+        var angka1 = parseInt(prompt('Masukan angka pertama :'));
+        var angka2 = parseInt(prompt('Masukan angka kedua :'));
+        var oprasi = prompt('Masukan oprasi matematika (Tambah / Kurang / Kali / Bagi / Pangkat / Min / Max');
+     //   var hasil;
+
+        if(oprasi == 'Tambah' || oprasi == 'tambah')
+        {
+            alert(angka1+'+'+angka2 +' = '+ (angka1+angka2));
+        }
+        else if(oprasi == 'Kurang' || oprasi == 'kurang')
+        {
+            alert(angka1+'-'+angka2 +' = '+ (angka1-angka2));
+        }
+        else if(oprasi == 'kali' || oprasi == 'kali')
+        {
+            alert(angka1+'*'+angka2 +' = '+ (angka1*angka2));
+        }
+        else if(oprasi == 'Bagi' || oprasi == 'bagi')
+        {
+            alert(angka1+'/'+angka2 +' = '+ (angka1/angka2));
+        }
+        else if(oprasi == 'Pangkat' || oprasi == 'pangkat')
+        {
+            alert(angka1+'^'+angka2 +' = '+ (Math.pow(angka1, angka2)));
+        }
+        else if(oprasi == 'Min' || oprasi == 'min')
+        {
+            if(angka1<angka2) alert(angka1);
+            else alert('Min = '+angka2)
+        }
+        else if(oprasi == 'Max' || oprasi == 'max')
+        {
+            if(angka1>angka2) alert(angka1);
+            else alert('Max = '+angka2);
+        }
+        
+        
+    </script>
+</body>
+</html>
